@@ -1,75 +1,396 @@
-body{
+*{
+    box-sizing: border-box;
     margin: 0;
     }
     
     
-    header {
+    .header {
         background-color: rgb(243, 238, 238);
         display: flex;
-        justify-content: flex-end;
         align-items: center;
-        height: 100px;
-        width: 100%;
+        height: 5rem;
         position: fixed;
-        z-index: 1000;
-        top:0
+        z-index: 100;
+        top:0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
     
-    header .logo{
+    .header .logo{
         cursor: pointer;
         order: 3;
-        margin-left: auto;
+        margin-left: 0;
     }
     
-    header .logo img{
+    .header .logo img{
         height: 70px;
-        width: 100%;
+        width: auto;
         transition: all 0.4s;
     }
     
-    header .logo img:hover{
+    .header .logo img:hover{
         transform: scale(1.2);
     }
     
-    header nav{
+    .header nav{
         order: 1;
     }
     
-    header ul{
+    .header ul{
         list-style: none;
     }
     
-    header ul li{
+    .header ul li{
         display: inline-block;
-        padding: 0 80px;    
+        padding: 2px 80px;    
     }
-    header ul li:nth-child(1){
+    .header ul li:nth-child(1){
         padding: 0 20px 0 0;
     }
-    header ul li:hover{
+    .header ul li:hover{
         transform: scale(1.1);
     }
     
-    header ul a{
+    .header ul a{
         font-family: "Ubuntu", sans-serif;
         font-weight: 700;
         font-size: 1.5rem;
         font-style: normal;
         color: #003558;
-        text-decoration: none;    
+        padding: 12px;
+        text-decoration: none;
+        position: relative;    
+    }
+       /**Diseño responsive aqui debajo**/
+
+    /*Responsive design*/
+    @media screen and (min-width: 600px)and (max-width: 790px) {
+        .header {  
+        height: 4rem;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        }
+     
+        .header ul{
+        padding: 0;
+        }
+        .header ul a{
+            font-weight: 700;
+            font-size: 1rem; 
+            padding: 12px;  
+        }
+
+       .header .logo{
+           height: 3rem;
+           margin-left: 0%;
+        }
+        .header .logo img{
+            width: 100%;
+            height: 3rem;
+        }
+        .header nav{
+        width: 100%;
+        padding: 0px;
+        }
+    
+        
+        .header ul li{
+            display:inline-block;
+            padding: 0; 
+        }  
+    
+
+ 
+    .container_all{
+        display: flex;
+        padding: 10px;
+              
+    }
+    .container_all .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_all .container .titulo_principal{
+        width: 100%;
+        height: 700px;
+        padding: 50px;
+    } 
+
+    .container_all .container .titulo_principal #titulo_pueblo{
+        width: 100%;
+        height: 400px;
+        font-weight: 400;
+        font-size: 5rem; 
+        margin: 0;
+        padding: 40px;
     }
     
+
     
-    
-    .container .titulo_principal{
-        padding: 70px;  
+    .container .titulo_principal #sub_pueblo{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .container_all .container .texto_titulo_principal {
+        display:inline-block;
         width: 100%;
+        height: 60rem;
+        text-align: center;
+    }
+    .container_all .container .texto_titulo_principal .fecha_fundacional{
+        font-size: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+    .container_all .container .texto_titulo_principal .container_img_texto_titulo_principal{
+       display: flex;
+       justify-content: center;
+        align-items: center;
+        padding: 40px 40px 40px 40px;
+    }
+    
+    .container_all .container .texto_titulo_principal .container_img_texto_titulo_principal img{
+        width: 23rem;
+     }
+
+    .container_all .segundo_slice{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 160rem;
+    
+    }
+    
+    .container_all .segundo_slice .texto_ave_fenix{
+        height: 120rem;
+        padding: 100px;
+        width: 100%;
+    }
+    
+    .container_all .segundo_slice .texto_ave_fenix #fenix_titulo{
+        font-size: 20px;
+        padding: 45px;
+    }
+    
+     .container_all .segundo_slice .texto_ave_fenix #parrafo_fenix{
+        font-size: 20px;
+        text-align: justify;  
+    }
+
+    .container_all .segundo_slice .imagen_fenix{
+        padding-right: 0;
+        height:50rem;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    
+    .container_all .segundo_slice .imagen_fenix img{
+        padding:0;
+        width: 20rem;
+        height: 25rem;  
+    }
+     
+    .resena #resena{
+        padding: 0;
+        margin: 0;
+        font-size: 50px;
+    }
+    
+    .container_all .segundo_slice_2{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 180rem;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    
+    .container_all .segundo_slice_2 .parrafo2_fenix{
+        justify-content: center;
+        align-items: center;
+        height: 170rem;
+        padding: 80px; 
+        width: 100%;
+        background-image: linear-gradient(rgba(159, 159, 159, 0.75),rgba(255, 255, 255, 0.75)),url(/img/AI_2.png);
+        background-size: cover;
+        position: relative; 
+    }
+    
+    .container_all .segundo_slice_2 .parrafo2_fenix p{
+        color: #151515;
+        font-style: italic;
+        padding: 55px;
+        font-size: 25px;
+        text-align: justify;
+        line-height: 2cap;
+    }
+    
+    .imagenes_derecha{
+        display: none;
+    }
+ 
+    .container_all .container_tercer_slide{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 150rem;
+    }
+    
+    .container_all .container_tercer_slide .seccion_uno{
+        background-color: white;
+        width: 40%;
+        height: 130rem;
+    }
+    
+    .container_all .container_tercer_slide .seccion_uno .container_fiestas hr{
+        display: none;
+    }
+    .container_all .container_tercer_slide .seccion_uno .container_fiestas h1{
+        padding: 20px;
+        text-align: center;
+    }
+    .container_all .container_tercer_slide .seccion_uno .container_fiestas ul{
+        color: #000000;
+        margin:0;
+        padding: 55px;
+        font-size: 17px;
+        line-height: 2cap;
+    }
+    
+    .container_all .container_tercer_slide .seccion_uno .epigrafe h1{
+        padding: 30px;
+        font-size: 26px;
+        text-align: center;
+        color: #003558;
+    }
+    
+    .container_all .container_tercer_slide .seccion_uno .epigrafe hr{
+        background-color: #000000;
+        width: 70px;
+        padding-left: 299px;
+    }
+    
+    .container_all .container_tercer_slide .seccion_uno .epigrafe p{
+        font-size: 12px;
+        padding: 20px;
+    }
+    
+  
+    .container_all .container_tercer_slide .seccion_uno .cumpleanos ul{
+        font-size: 13px;
+        line-height: 2rem;
+        padding: 40px;
+        text-align: start;
+    }
+
+    .container_all .container_tercer_slide .seccion_dos{
+        background-color: #e6feff;
+        width: 100%;
+        height: 130rem;
+        padding: 50px;
+    }
+
+    .container_all .container_tercer_slide .seccion_dos .gentilicios{
+        padding: 45px;
+    }
+
+    .container_all .container_tercer_slide .seccion_dos .gentilicios h1{
+        padding: 3px;
+        text-align: start;
+        font-size: 29px;
+    }
+    .container_all .container_tercer_slide .seccion_dos .gentilicios hr{
+       display: none; 
+    }
+    .container_all .container_tercer_slide .seccion_dos .apelativos hr{
+        display: none;
+    }
+    .container_all .container_tercer_slide .seccion_uno .epigrafe hr{
+        display: none;
+    }
+    .container_all .container_tercer_slide .seccion_uno .cumpleanos{
+        padding: 7px;
+    }
+    .container_all .container_tercer_slide .seccion_uno .cumpleanos ul li{
+        line-height: 3cap;
+    }
+    .container_all .container_tercer_slide .seccion_uno .cumpleanos hr{
+        display: none;
+    }
+    .footer .footer_container{
+        width: 100%;
+        padding: 25px;
+        margin-top: 10px;
+    }
+    
+    .footer .footer_container .social_icons{
+        width: 100%;
+        height: 13rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .footer_container .social_icons i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social_icons a{
+        width: 65px;
+    }
+
+    .footer_nav p {
+        text-align: center;
+    }
+    .footer_nav ul li a{
+        display: none;
+
+    }
+
+
+      }
+
+
+
+
+    
+      /*web design*/
+     .container_all{
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+     }
+    
+    .container_all .container{
+        height: 100%;
+    }    
+    .container .titulo_principal{
+        padding: 90px;  
+        width: 100%;
+        height: 1000px;
     }
     
     .container .titulo_principal #titulo_pueblo{
         font-family: "Ubuntu", sans-serif;
         font-weight: 400;
-        font-size: 150px;
+        font-size: 10rem;
         font-style: normal;
         color:#003558;
     }
@@ -77,10 +398,11 @@ body{
         font-family: "Ubuntu", sans-serif;
         font-weight: 700;
         font-style: italic;
+        padding: 42px;
     }
     
     .texto_titulo_principal .fecha_fundacional{
-        padding-top: 90px;
+        padding-top: 50px;
         text-align: center;
         font-size: 20px;
         font-family: "Protest Revolution", sans-serif;
@@ -92,17 +414,20 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 10px;
     }
     
     .texto_titulo_principal   .container_img_texto_titulo_principal img{
-        width: 50rem;
-        height: 26rem;
+        max-width: 100%;
+        height: 21rem;
+        padding: 12px;
+        width: 49rem;
     }
     
-    #resena{
-        padding: 80px;
+    .resena #resena{
+        padding: 20px;
         text-align: center;
-        font-size: 20px;
+        font-size: 40px;
         font-family: "Ubuntu", sans-serif;
         font-weight: 800;
         font-style: bold;
@@ -112,11 +437,12 @@ body{
         display: flex;
         flex-direction: row;
         width: 100%;
+        height: 50rem;
     
     }
     
     .segundo_slice .texto_ave_fenix{
-        height: 400px;
+        height: 30rem;
         padding: 40px;
     }
     
@@ -144,8 +470,10 @@ body{
     }
     
     .segundo_slice .imagen_fenix img{
-        padding: 40px;
-        height: 400px;  
+        padding: 10px;
+        width: 170rem;
+        max-width: 100%;
+        height: 500px;  
     }
     
     @keyframes show_imagen_fenix{
@@ -160,6 +488,7 @@ body{
     }
     
     .segundo_slice .imagen_fenix img{
+     
         view-timeline-name: --image;
         view-timeline-axis: block;
         animation-timeline: --image;
@@ -169,14 +498,7 @@ body{
     
     }
     
-    
-    
-    .linea_separadora{
-        border: 3px solid rgb(11, 106, 143);
-        width: 91%;
-        margin: 50px;
-    }
-    
+         
     .parrafo2_fenix{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
@@ -188,35 +510,34 @@ body{
     .segundo_slice_2{
         display: flex;
         flex-direction: row-reverse;
-        height: 60rem;
+        height: 70rem;
         margin-left: 30px;
-        width: 110rem;
+        width: 100%;
     }
     
     .parrafo2_fenix{
-        background:linear-gradient(rgb(255, 255, 255), rgb(154, 186, 199));
-        border-radius: 50px;
-        height: 57.5rem;
+        justify-content: center;
+        align-items: center;
+        height: 40rem;
         padding: 30px; 
-        
+        width: 45%;
     }
     
     .parrafo2_fenix p{
         color: #003558;
         padding: 20px;
-        font-size: 19px;
+        font-size: 15px;
         text-align: justify;
         line-height: 2cap;
-        width: 600px;
     }
     
     .imagenes_derecha{
-        background-color: #003558;
+        background-color: #e6feff;
         border-radius: 50px;
         margin-right: 5em;
         flex-direction: column-reverse;
         height: 60rem;
-        width: 100%;
+        width: 50%;
     }
     .imagen_logo{
         display: flex;
@@ -225,48 +546,52 @@ body{
     }
     
     .imagenes_derecha .imagen_logo img{
-        border: 9px solid rgb(228, 239, 252);
+        max-width: 100%;
+        border: 9px solid #003558;
         border-radius: 925px;
-        background-color: #003558;
         width: 500px;
         height: 25rem;
-        padding: 20px;
-        margin: 23px;
+        margin: 20px;
     }
     
     .imagenes_derecha .imagen_dos img{
-        background-color: #003558;
-        border: 9px solid rgb(228, 239, 252);
+        max-width: 100%;
+        border: 9px solid #003558;
+        border-radius: 105px;
+        background-color: rgb(228, 239, 252);
         height: 24rem;
         width: 90%;
         padding: 15px;
     }
     .imagen_dos img{
-        margin-left: 25px;
-        width: 300px;
+        max-width: 100%;
+        padding: 12px;
+        margin: 100px;
+        width: 269px;
     }
     
     .container_tercer_slide{
+        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: row;
     }
     
     .seccion_uno{
-        background-color: beige;
+        background-color: white;
         width: 30%;
         height: 130em;
     }
     
     .seccion_uno .container_fiestas h1{
-        color: rgb(255, 145, 0);
+        color: #003558;
         font-family: "Ubuntu", sans-serif;
         padding: 10px 20px;
         text-align: center;
     }
-    .seccion_uno .container_fiestas hr{
-        width: 50%;
-    }
+
     .seccion_uno .container_fiestas ul{
+        color: #003558;
         margin: 22px;
         font-size: 19px;
         line-height: 3cap;
@@ -281,10 +606,7 @@ body{
         text-align: center;
         font-family: "Ubuntu", sans-serif;
     }
-    
-    .seccion_uno .epigrafe hr{
-        width: 50%;
-    }
+
     
     .seccion_uno .epigrafe p{
         text-align: center;
@@ -303,16 +625,16 @@ body{
         text-align: center; 
     }
     .seccion_uno .cumpleanos ul{
-        font-size: 19px;
-        line-height: 2rem;
+        font-size: 12px;
+        line-height: 5rem;
+        text-align: center;
+        list-style: none;
         font-family: "Ubuntu", sans-serif;
     }
-    .seccion_uno .cumpleanos hr{
-        width: 50%;
-    }
+ 
     
     .seccion_dos{
-        background-color: rgb(248, 248, 238);
+        background-color: #e6feff;
         border-radius: 50px;
         width: 70%;
         height: 130em;
@@ -324,12 +646,10 @@ body{
         font-size: 19px; 
     }
     .seccion_dos .gentilicios  h1{
-        color: rgb(255, 145, 0);
+        color: #003558;
         
     }
-    .seccion_dos .gentilicios hr{
-        width: 50%;
-    }
+
     .seccion_dos .apelativos{
         font-family: "Ubuntu", sans-serif;
         text-align: center;
@@ -341,6 +661,7 @@ body{
         align-items: center;
     }
     .seccion_dos .apelativos img{
+        max-width: 100%;
         width: 900px;
         text-align: center;
         padding: 30px;
@@ -364,29 +685,26 @@ body{
         animation-range: entry 25% cover 30%;
         animation-fill-mode: both;
     }
-    .seccion_dos .apelativos hr{
-        width: 70%;
-    }
+
     
     .seccion_dos .personaje{
         font-family: "Ubuntu", sans-serif;
         text-align: center;
-        font-size: 19px;
+        font-size: 11px;
     }
     
     .seccion_dos .economia h1{
         font-family: "Ubuntu", sans-serif;
         text-align: center;
         font-size: 29px;
-        color: rgb(255, 145, 0);
+        color: #0FA548;
         
     }
     .seccion_dos .economia p{
         font-family: "Ubuntu", sans-serif;
         line-height: 2;
         text-align: center;
-        
-    
+        padding: 12px;
     }
     .seccion_dos .economia .imagen_economia{
         background-color: transparent;
@@ -395,8 +713,10 @@ body{
         align-items: center;
     }
     
-    .seccion_dos .economia .imagen_economia img{
+    .seccion_dos img{
+        max-width: 100%;
         width: 300px;
+        border-top: 55px solid transparent;
         height: fit-content;
     }
     
@@ -407,21 +727,34 @@ body{
     }
     
     .seccion_dos .represa img{
-        width: 80em;
+        max-width: 100%;
+        border-radius: 50px;
+        width: 50em;
         height: fit-content;
     }
     
-    
-    
-    
-    .footer_container{
+    .footer{
+        max-width: 100%;
         width: 100%;
-        padding: 70px 30px;
+        padding: 5px;
+       background-color: white;
+    }
+
+    .footer .footer_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+        margin: 5px;
+        padding: 55px;
+        margin-top: 100px;
     }
     
-    .social_icons{
+    .footer .footer_container .social_icons{
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     
     .social_icons a{
@@ -429,11 +762,12 @@ body{
         padding: 20px;
         background-color: #000000;
         color: white;
-        margin: 30px;
+        margin: 7px;
         border-radius: 50%;
     }
     
     .social_icons a{
+        border: 5px solid #003558;
         font-size: 2em;
         opacity: 0.5;
     }
@@ -450,6 +784,7 @@ body{
     
     .footer_nav{
         margin: 30px 0;
+        width: 100%;
     }
     
     .footer_nav ul{
@@ -469,10 +804,15 @@ body{
     .footer_nav  ul li a:hover{
         opacity:0.1
     }
+    .footer_nav p{
+        display: none;
+    }
     
     
     .bottm{
         background-color: rgb(0, 0, 0);
+        width: 100%;
+        max-width: 100%;
         padding: 12px;
         font-size: 12px;
         color: rgb(255, 253, 253);
@@ -481,8 +821,6 @@ body{
         font-style: bold;
     }
     
-    
-    /**Diseño responsive aqui debajo**/
-    /*Responsive design*/
-    
+
+ 
     
