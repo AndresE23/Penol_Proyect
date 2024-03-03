@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sitios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0808fde3d7.js" crossorigin="anonymous"></script>
+    <title>Información turística</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - matplotlib
+    </py-env>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.jpg" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="">Hoteles</a></li>
+            <li><a href="">Restaurantes</a></li>
+            <li><a href="">Sitios turísticos</a></li>
+            <li><a href="/sitios.html">Reseña Histórica</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+                <div class="titulo_principal">
+                    <h1 id="titulo_pueblo">Sitios El Peñol.  </h1>
+                    <h1 id="sub_pueblo">Mejores Lugares</h1>
+                </div>
+            
+
+                
+             <div class="texto_titulo_principal">
+               <div class="fecha_fundacional">
+                
+               </div> 
+                <div class="container_img_texto_titulo_principal">
+                    <div id="lineplot"></div>
+                    <py-script output="lineplot">
+                        # Python Code Goes Here ...
+                        import matplotlib.pyplot as plt
+            
+                        fig, ax = plt.subplots()
+            
+                        Vecchio_Forno_G = [2016, 2017, 2018, 2019, 2020, 2021]
+                        population_1 = [42, 43, 45, 43, 48, 50]
+            
+                        Casa_Cuba = [2016, 2017, 2018, 2019, 2020, 2021]
+                        population_2 = [43, 43, 46, 44, 47, 51]
+            
+                        plt.plot(Vecchio_Forno_G, population_1, marker='o', linestyle='--', color='g', label='Vecchio_Forno_G')
+                        plt.plot(Casa_Cuba, population_2,  marker='d', linestyle='-', color='r', label='Casa_Cuba')
+            
+                        plt.xlabel('Year')
+                        plt.ylabel('Population (M)')
+                        plt.title('Year vs Population')
+                        plt.legend(loc='lower right')
+            
+                        fig
+
+
+
+                    </py-script>
+                </div>
+             </div> 
+        </div>
+
+        <br><br>
+
+        <div id="contenedor1">
+            <div id="ani">
+                <a href="/Piedra 1.html" target="_blank">
+                <article>
+                    <img src="/Imagenes/pexels-photo-14352566.jpeg" href="">
+                    <img src="/Imagenes/Piedra.png" href="">
+                </article>
+                </a>
+            </div>
+
+            <div id="ani2">
+                <a href="">
+                <article>
+                    <img src="/Imagenes/Botes.jpg" href="">
+                    <img src="/Imagenes/Bote.png" href="">
+                </article>
+                </a>
+            </div>
+
+            <div id="ani3">
+                <a href="">
+                <article>
+                    <img  src="/Imagenes/Cabañas.jpg">                     
+                    <img src="/Imagenes/Cabaña.png" href="">                    
+                </article>
+                </a>
+            </div>
+
+            <div id="ani4">
+                <a href="">
+                <article>
+                    <img src="/Imagenes/Restaurantes.jpg" href="">
+                    <img src="/Imagenes/Restaurante.png" href="">
+                </article>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="segundo_slice">
+            <div class="texto_ave_fenix">
+                <h1 id="fenix_titulo">¡Descubre la Maravilla Natural de El Peñol en Colombia!</h1>
+                <p id="parrafo_fenix">Bienvenidos a El Peñol, un paraíso terrenal en Colombia que deleita los sentidos con su asombrosa belleza natural. La Piedra del Peñol se erige como una colosal maravilla, invitándote a subir sus escalones y ser testigo de vistas panorámicas que revelan la grandeza de la creación. Cada peldaño es una invitación a descubrir la pureza del entorno, mientras la imponente formación rocosa se erige como un monumento de la naturaleza.
+
+                    Nuestro recorrido nos lleva al tranquilo Embalse de Guatapé, donde las aguas serenas reflejan la exuberancia de los verdes paisajes circundantes. Explorar el embalse en barco se convierte en una experiencia de paz y conexión con la naturaleza, sumergiéndote en un espejo de serenidad que cautiva el alma. Las pintorescas calles de Guatapé, adornadas con fachadas vibrantes y zócalos coloridos, se convierten en un lienzo vivo que cuenta historias únicas y revela la creatividad de sus habitantes.
+                    
+                    Continuamos nuestra travesía por la Ruta de las Flores, un sendero que despierta los sentidos con campos florecidos y una diversidad de colores y aromas que crean un espectáculo natural inigualable. Descubre miradores secretos que ofrecen vistas panorámicas que quitan el aliento, revelando la grandeza de El Peñol desde perspectivas únicas y sorprendentes. Este es un lugar donde la naturaleza se convierte en poesía visual, donde cada sitio hermoso es una razón para enamorarse de la creación. ¡Ven y sumérgete en la belleza inigualable de El Peñol en Colombia!
+                </p>
+            </div>
+            <div class="imagen_fenix">
+                <img src="/img/El-Peñol-Antioquia-Fenix-de-America-2.jpg" alt="">
+            </div>
+        </div>
+        <br><br>
+    </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="social_icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footer_nav">
+                    <ul>
+                        <li><a href="">Somos</a></li>
+                        <li><a href="">los mejores</a></li>
+                        <li><a href="">en</a></li>
+                        <li><a href="">esto</a></li>
+                        <li><a href="">compadre!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottm">
+                <p>Todos los drechos reservados Andres Elias Arroyo Dev 2024</p>
+            </div>
+        </footer>
+</body>
+</html>
