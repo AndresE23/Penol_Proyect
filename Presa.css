@@ -4,7 +4,7 @@ body{
     
     
     header {
-        background-color: rgb(243, 238, 238);
+        background-color: #EFF9FB;
         display: flex;
         justify-content: flex-end;
         align-items: center;

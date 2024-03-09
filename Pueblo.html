@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Pueblo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0808fde3d7.js" crossorigin="anonymous"></script>
+    <title>Información turística</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - matplotlib
+    </py-env>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Imagenes/logo.png" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="">Hoteles</a></li>
+            <li><a href="">Restaurantes</a></li>
+            <li><a href="/sitios.html" target="_blank">Sitios turísticos</a></li>
+            <li><a href="/sitios.html">Reseña Histórica</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+                <div class="titulo_principal">
+                    <h1 id="titulo_pueblo">El Pueblo </h1>
+                    <h1 id="sub_pueblo">Mejores Lugares</h1>
+                </div>
+
+            <div class="gen">
+                    <div class="graf1">
+                    <div id="lineplot"></div>
+                    <py-script output="lineplot">
+                        import matplotlib.pyplot as plt
+
+                        fig, ax = plt.subplots()
+
+                        # Simular datos (reemplazar con datos reales si los tienes)
+                        meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+                        temperatura = [20.1, 20, 21, 22, 22.5, 21.8, 21, 20.7, 20.3, 20.8, 21.2, 20.5]  # Temperatura promedio mensual (°C)
+                        turistas = [10000, 12000, 15000, 18000, 20000, 19000, 17000, 15000, 12000, 11000, 10500, 11500]  # Número de turistas (simulado)
+                        
+                        # **Gráfica de temperatura**
+                        plt.plot(meses, temperatura, color="red", label="Temperatura")
+                        plt.xlabel("Mes")
+                        plt.ylabel("Temperatura (°C)")
+                        plt.grid(True)
+                        
+                        # **Rotar etiquetas de meses**
+                        plt.xticks(rotation=90)
+                        
+                        # **Mostrar la gráfica**
+                        fig
+                    
+                    </py-script>
+                    </div>
+                    
+                    <div class="graf2">
+                    <div id="lineplot1"></div>
+                    <py-script output="lineplot1">
+                        # **Gráfica de turistas**
+                        plt.bar(meses, turistas)
+                        plt.ylabel("Número de turistas")
+                        plt.xticks(rotation=90)  # Rotar las etiquetas de los meses
+                        
+                        # Mostrar la gráfica
+                        fig
+
+                    </py-script>
+                </div>
+
+            </div>
+             
+        </div>
+
+        <br><br>
+
+        <!-- <div id="contenedor1">
+            <div id="ani"> -->
+                <div class="wrapper">
+                    <div class="container2">
+                        
+                        <input type="radio" name="slide" id="c1" checked>
+                        <label for="c1" class="card">
+                            <div class="row">
+                                <div class="icon">1</div>
+                                <div class="description">
+                                    <a href="/Imagenes/rio1.jpeg" target="_blank">
+                                    <h4>Winter</h4>
+                                    <p>Winter has so much to offer -
+                                     creative activities</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c2" >
+                        <label for="c2" class="card">
+                            <div class="row">
+                                <div class="icon">2</div>
+                                <div class="description">
+                                    <a href="/Imagenes/rio2.jpg" target="_blank">
+                                    <h4>Digital Technology</h4>
+                                    <p>Gets better every day -
+                                     stay tuned</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c3" >
+                        <label for="c3" class="card">
+                            <div class="row">
+                                <div class="icon">3</div>
+                                <div class="description">
+                                    <a href="/Imagenes/rio3.jpg" target="_blank">
+                                    <h4>Globalization</h4>
+                                    <p>Help people all over the world</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c4" class="card">
+                            <div class="row">
+                                <div class="icon">4</div>
+                                <div class="description">
+                                    <a href="/Imagenes/rio4.jpg" target="_blank">
+                                    <h4>New technologies</h4>
+                                    <p>Space engineering becomes
+                                     more and more advanced</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            <!-- </div>
+        </div> -->
+
+
+
+        <div class="segundo_slice">
+            <div class="texto_ave_fenix">
+                <h1 id="fenix_titulo">¡La Magia del pueblo!</h1>
+                <p id="parrafo_fenix">
+                    En las montañas de Antioquia, donde el verde se extiende hasta donde la vista alcanza, se encuentra El Peñol, un pueblo con una historia tan singular como su paisaje. En sus inicios, a mediados del siglo XVII, era un pequeño caserío conocido como "Viejo Peñol", habitado por colonos que buscaban una vida tranquila entre las montañas. Su ritmo pausado y sus tradiciones ancestrales se mantuvieron intactos durante siglos, hasta que llegó un evento que cambiaría su destino para siempre.
+                    
+                    A mediados del siglo XX, la construcción de la represa de Guatapé inundó gran parte del territorio, incluyendo el "Viejo Peñol". Sus habitantes, con la tristeza de dejar atrás sus hogares y recuerdos, se vieron obligados a reubicarse en un nuevo emplazamiento. El Peñol resurgió de las aguas, como un ave fénix, en una nueva ubicación a pocos kilómetros del antiguo pueblo.
+                    
+                    El nuevo Peñol, aunque conserva la esencia y el espíritu del original, se ha convertido en un pueblo moderno y próspero. Su economía, basada en el turismo, la ganadería y la agricultura, ha florecido. La imponente Piedra del Peñol, un gigante de granito que se alza sobre el embalse, se ha convertido en un símbolo de la resiliencia y el renacimiento del pueblo. Los peñolenses, orgullosos de su pasado y esperanzados por su futuro, siguen escribiendo la historia de este lugar mágico, un pueblo que se niega a ser olvidado.
+                </p>
+            </div>
+            <div class="imagen_fenix">
+                <img src="/img/El-Peñol-Antioquia-Fenix-de-America-2.jpg" alt="">
+            </div>
+        </div>
+        <br><br>
+    </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="social_icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footer_nav">
+                    <ul>
+                        <li><a href="">Somos</a></li>
+                        <li><a href="">los mejores</a></li>
+                        <li><a href="">en</a></li>
+                        <li><a href="">esto</a></li>
+                        <li><a href="">compadre!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottm">
+                <p>Todos los drechos reservados  Dev 2024</p>
+            </div>
+        </footer>
+
+        
+</body>
+</html>

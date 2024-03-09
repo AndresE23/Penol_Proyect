@@ -1,10 +1,10 @@
 body{
     margin: 0;
     }
-    
-    
+
+
     header {
-        background-color: rgb(243, 238, 238);
+        background-color: #EFF9FB;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -14,34 +14,34 @@ body{
         z-index: 1000;
         top:0
     }
-    
+
     header .logo{
         cursor: pointer;
         order: 3;
         margin-left: auto;
     }
-    
+
     header .logo img{
         height: 70px;
         width: 100%;
         transition: all 0.4s;
     }
-    
+
     header .logo img:hover{
         transform: scale(1.2);
     }
-    
+
     header nav{
         order: 1;
     }
-    
+
     header ul{
         list-style: none;
     }
-    
+
     header ul li{
         display: inline-block;
-        padding: 0 80px;    
+        padding: 0 80px;
     }
     header ul li:nth-child(1){
         padding: 0 20px 0 0;
@@ -49,14 +49,14 @@ body{
     header ul li:hover{
         transform: scale(1.1);
     }
-    
+
     header ul a{
         font-family: "Ubuntu", sans-serif;
         font-weight: 700;
         font-size: 1.5rem;
         font-style: normal;
         color: #003558;
-        text-decoration: none;    
+        text-decoration: none;
     }
 /* ---------------------------------------------Esto es la animacion --------------------------------------------*/
     article {
@@ -64,7 +64,7 @@ body{
         width: 260px;
         transition: all .3s ease;
     }
-    
+
     article img:first-child {
         box-shadow: 0 60px 60px -60px rgb(3, 39, 53);
         border-radius: 4px;
@@ -110,7 +110,32 @@ body{
         transform: translateY(10%);
     }
 
-    
+    .video-container {
+        width: 1000px; /* Adjust width as needed */
+        height: 650px; /* Adjust height as needed */
+        margin: 0 auto; /* Center the container horizontally */
+        background-color: #f0f0f0; /* Optional background color */
+        border-radius: 10px; /* Set the rounded corner radius */
+        overflow: hidden; /* Prevent iframe from overflowing the container */
+      }
+      /* Optional styling for the iframe */
+    iframe {
+    width: 100%; /* Stretch iframe to fit container width */
+    height: 100%; /* Stretch iframe to fit container height */
+    }
+
+    .grafica{
+ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #lineplot {
+        display: inline-block; /* Allow centering of block-level elements */
+      }
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* ----------------------------------------Imagenes una al aldo de la otra----------------------------------------------------------------- */
@@ -129,10 +154,10 @@ body{
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
 
     .container .titulo_principal{
-        padding: 70px;  
+        padding: 70px;
         width: 100%;
     }
-    
+
     .container .titulo_principal #titulo_pueblo{
         font-family: "Ubuntu", sans-serif;
         font-weight: 400;
@@ -145,7 +170,7 @@ body{
         font-weight: 700;
         font-style: italic;
     }
-    
+
     /* .texto_titulo_principal .fecha_fundacional{
         padding-top: 90px;
         text-align: center;
@@ -154,18 +179,18 @@ body{
         font-weight: 100;
         font-style: italic;
     } */
-    
+
     .texto_titulo_principal   .container_img_texto_titulo_principal{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     .texto_titulo_principal   .container_img_texto_titulo_principal img{
         width: 40rem;
         height: 26rem;
     }
-    
+
     #resena{
         padding: 80px;
         text-align: center;
@@ -174,19 +199,19 @@ body{
         font-weight: 800;
         font-style: bold;
     }
-    
+
     .segundo_slice{
         display: flex;
         flex-direction: row;
         width: 100%;
-    
+
     }
-    
+
     .segundo_slice .texto_ave_fenix{
         height: 400px;
         padding: 40px;
     }
-    
+
     .segundo_slice .texto_ave_fenix #fenix_titulo{
         font-size: 22px;
         text-align: center;
@@ -195,7 +220,7 @@ body{
         font-weight: 600;
         font-family: "Ubuntu", sans-serif;
     }
-    
+
     .segundo_slice .texto_ave_fenix #parrafo_fenix{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
@@ -203,18 +228,18 @@ body{
         padding: 25px;
         line-height: 2;
     }
-    
+
     .segundo_slice .imagen_fenix{
         height: 500px;
         align-items: end;
         padding-right: 60px;
     }
-    
+
     .segundo_slice .imagen_fenix img{
         padding: 40px;
-        height: 400px;  
+        height: 400px;
     }
-    
+
     @keyframes show_imagen_fenix{
         from{
             opacity: 0;
@@ -225,7 +250,7 @@ body{
             scale: 100%;
         }
     }
-    
+
     .segundo_slice .imagen_fenix img{
         view-timeline-name: --image;
         view-timeline-axis: block;
@@ -233,17 +258,17 @@ body{
         animation-name: show_imagen_fenix;
         animation-range: entry 25% cover 30%;
         animation-fill-mode: both;
-    
+
     }
-    
-    
-    
+
+
+
     .linea_separadora{
         border: 3px solid rgb(11, 106, 143);
         width: 91%;
         margin: 50px;
     }
-    
+
     .parrafo2_fenix{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
@@ -251,7 +276,7 @@ body{
         padding: 25px;
         line-height: 2;
     }
-    
+
     .segundo_slice_2{
         display: flex;
         flex-direction: row-reverse;
@@ -259,15 +284,15 @@ body{
         margin-left: 30px;
         width: 110rem;
     }
-    
+
     .parrafo2_fenix{
         background:linear-gradient(rgb(255, 255, 255), rgb(154, 186, 199));
         border-radius: 50px;
         height: 57.5rem;
-        padding: 30px; 
-        
+        padding: 30px;
+
     }
-    
+
     .parrafo2_fenix p{
         color: #003558;
         padding: 20px;
@@ -276,7 +301,7 @@ body{
         line-height: 2cap;
         width: 600px;
     }
-    
+
     .imagenes_derecha{
         background-color: #003558;
         border-radius: 50px;
@@ -290,7 +315,7 @@ body{
         justify-content: center;
         align-items: center;
     }
-    
+
     .imagenes_derecha .imagen_logo img{
         border: 9px solid rgb(228, 239, 252);
         border-radius: 925px;
@@ -300,7 +325,7 @@ body{
         padding: 20px;
         margin: 23px;
     }
-    
+
     .imagenes_derecha .imagen_dos img{
         background-color: #003558;
         border: 9px solid rgb(228, 239, 252);
@@ -312,18 +337,18 @@ body{
         margin-left: 25px;
         width: 300px;
     }
-    
+
     .container_tercer_slide{
         display: flex;
         flex-direction: row;
     }
-    
+
     .seccion_uno{
         background-color: beige;
         width: 30%;
         height: 130em;
     }
-    
+
     .seccion_uno .container_fiestas h1{
         color: rgb(255, 145, 0);
         font-family: "Ubuntu", sans-serif;
@@ -341,24 +366,24 @@ body{
         font-weight: 300;
         list-style-type: circle;
     }
-    
+
     .seccion_uno .epigrafe h1{
         margin-top: 25px;
         font-size: 25px;
         text-align: center;
         font-family: "Ubuntu", sans-serif;
     }
-    
+
     .seccion_uno .epigrafe hr{
         width: 50%;
     }
-    
+
     .seccion_uno .epigrafe p{
         text-align: center;
         font-family: "Ubuntu", sans-serif;
         font-style: italic;
     }
-    
+
     .seccion_uno .cumpleanos h2{
         font-size: 25px;
         font-family: "Ubuntu", sans-serif;
@@ -367,7 +392,7 @@ body{
     .seccion_uno .cumpleanos p{
         font-family: "Ubuntu", sans-serif;
         font-weight: 600;
-        text-align: center; 
+        text-align: center;
     }
     .seccion_uno .cumpleanos ul{
         font-size: 19px;
@@ -377,22 +402,22 @@ body{
     .seccion_uno .cumpleanos hr{
         width: 50%;
     }
-    
+
     .seccion_dos{
         background-color: rgb(248, 248, 238);
         border-radius: 50px;
         width: 70%;
         height: 130em;
     }
-    
+
     .seccion_dos .gentilicios {
         font-family: "Ubuntu", sans-serif;
         text-align: center;
-        font-size: 19px; 
+        font-size: 19px;
     }
     .seccion_dos .gentilicios  h1{
         color: rgb(255, 145, 0);
-        
+
     }
     .seccion_dos .gentilicios hr{
         width: 50%;
@@ -434,26 +459,26 @@ body{
     .seccion_dos .apelativos hr{
         width: 70%;
     }
-    
+
     .seccion_dos .personaje{
         font-family: "Ubuntu", sans-serif;
         text-align: center;
         font-size: 19px;
     }
-    
+
     .seccion_dos .economia h1{
         font-family: "Ubuntu", sans-serif;
         text-align: center;
         font-size: 29px;
         color: rgb(255, 145, 0);
-        
+
     }
     .seccion_dos .economia p{
         font-family: "Ubuntu", sans-serif;
         line-height: 2;
         text-align: center;
-        
-    
+
+
     }
     .seccion_dos .economia .imagen_economia{
         background-color: transparent;
@@ -461,36 +486,36 @@ body{
         justify-content: center;
         align-items: center;
     }
-    
+
     .seccion_dos .economia .imagen_economia img{
         width: 300px;
         height: fit-content;
     }
-    
+
     .seccion_dos .represa{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     .seccion_dos .represa img{
         width: 80em;
         height: fit-content;
     }
-    
-    
-    
-    
+
+
+
+
     .footer_container{
         width: 100%;
         padding: 70px 30px;
     }
-    
+
     .social_icons{
         display: flex;
         justify-content: center;
     }
-    
+
     .social_icons a{
         text-decoration: none;
         padding: 20px;
@@ -499,32 +524,32 @@ body{
         margin: 30px;
         border-radius: 50%;
     }
-    
+
     .social_icons a{
         font-size: 2em;
         opacity: 0.5;
     }
-    
+
     .social_icons a:hover{
         background-color: #111;
         transition: 0.5s;
     }
-    
+
     .social_icons a:hover i{
         background-color: #000000;
         transition: 0.2s;
     }
-    
+
     .footer_nav{
         margin: 30px 0;
     }
-    
+
     .footer_nav ul{
         display: flex;
         justify-content: center;
         list-style: none;
     }
-    
+
     .footer_nav ul  li a{
         color: rgb(0, 0, 0);
         margin: 20px;
@@ -536,8 +561,8 @@ body{
     .footer_nav  ul li a:hover{
         opacity:0.1
     }
-    
-    
+
+
     .bottm{
         background-color: rgb(0, 0, 0);
         padding: 12px;
@@ -547,9 +572,8 @@ body{
         font-size: 19px;
         font-style: bold;
     }
-    
-    
+
+
     /**Diseño responsive aqui debajo**/
     /*Responsive design*/
-    
-    
+
