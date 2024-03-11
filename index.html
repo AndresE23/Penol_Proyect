@@ -12,11 +12,11 @@
    
    <style>
       p {
-         font-size: 13px; /* Tamaño de letra original para la etiqueta <p> */
+         font-size: 13px; 
       }
 
       h1 + p {
-         font-size: 20px; /* Tamaño de letra aumentado para la etiqueta <p> después de <h1> */
+         font-size: 20px; 
       }
 
       .content h1 {
@@ -81,30 +81,22 @@
    </style>
 
 </head>
-<!--
-   <style>
-      h1 {
-         font-style: 20px;
-      }
-   </style>
-<body>
--->
-   <!-- header -->
+
 <body>
    <header class="header">
-      <a href="/sitios.html"class="logo"><i class="fa-solid fa-water " > El Penol </i></a>
-      
       <nav class="navbar">
-         <a href="Repositorio.html" class="btn">Hoteles</a>
+         <a href="Repositorio.html" class="btn">Oferta Hoteles</a>
       </nav>
 
-      <div id="menu-btn" class="fas fa-bars"></div>
+      <a href="/restaurantes.html"class="logo">Restaurantes</a>
+      <a href="/sitios.html"class="logo">Sitios turísticos</a>
+      <a href="/resena.html"class="logo">Reseña Histórica</a>
+      
 
+      <div id="menu-btn" class="fas fa-bars"></div>
    </header>
 
-   <!-- end -->
 
-   <!-- home -->
 
    <section class="home" id="home">
 
@@ -149,16 +141,12 @@
 
    </section>
 
-   
-   <!-- FIN -->
-
-
-   <!-- room -->
+ 
 
    <section class="room" id="room">
 
       <h1 class="heading">Hoteles</h1>
-      <p> En el corazón de la hermosa región de Antioquia, te damos la bienvenida a nuestros encantadores Hoteles. Nos enorgullece ofrecer servicios hoteleros de alta calidad, brindando una experiencia única y acogedora para nuestros huéspedes.
+      <p> En el corazón de la hermosa región de Antioquia en El Peñol, te damos la bienvenida a nuestros encantadores Hoteles. Nos enorgullece ofrecer servicios hoteleros de alta calidad, brindando una experiencia única y acogedora para nuestros huéspedes.
       </p>
       <div class="swiper room-slider">
 
@@ -246,7 +234,7 @@
                      <i class="fas fa-star"></i>
                      <i class="fas fa-star-half-alt"></i>
                   </div>
-                  <a href="/andresC.html" class="btn">Ver mas</a>
+                  <a href="/andresC.html" class="btn">Ver más</a>
                </div>
             </div>
 
@@ -259,18 +247,27 @@
 
    </section>
 
-   <section class="footer">
-
-      <div class="box-container">
+   <footer class="footer">
+      <div class="footer_container">
+          <div class="social_icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="footer_nav">
+              <ul>
+                  <li><a href="">El mejor lugar para Disfrutar y Aprender</a></li>
+              </ul>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eos vel quaerat temporibus, ullam voluptatem corporis, mollitia doloremque culpa laudantium eveniet recusandae consequuntur reiciendis dolorem aperiam ipsum expedita nisi officiis?</p>
+          </div>
       </div>
-
-      <div class="share">
-         <a href="#" class="fab fa-facebook-f"></a>
-         <a href="#" class="fab fa-instagram"></a>
-         <a href="#" class="fab fa-youtube"></a>
-         <a href="#" class="fab fa-google"></a>
+      <div class="bottm">
+          <p>Todos los derechos reservados 2024</p>
       </div>
-   </section>
+  </footer>
+
 
    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 

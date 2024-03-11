@@ -2,8 +2,6 @@
 <html>
 <link rel="shortcut icon" href="/images2/logo.jpg" type="image/x-icon">
 <head>
-
-
   <style>
 
 *{
@@ -17,7 +15,7 @@
     transition: .2s linear;
 }
    body {
-    background-color: #CBF3FC;
+    background-color: #003558;
 }
 html::-webkit-scrollbar{
     width: .8rem;
@@ -28,23 +26,71 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:  #446a7a;
+    background: #3f637a;
     border-radius: .5rem;
 }
 
 section{
     padding: 5rem 7%;
 }
-.heading{
-    font-size: 4rem;
-    color: #446a7a;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-bottom: 3rem;
+ 
+.header {
+  background-color: rgb(243, 238, 238);
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  position: fixed;
+  z-index: 100;
+  top:0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
-      
-      
+
+.header .logo{
+  cursor: pointer;
+  order: 3;
+  margin-left: 0;
+}
+
+.header .logo img{
+  height: 70px;
+  width: auto;
+  transition: all 0.4s;
+}
+
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+
+.header nav{
+  order: 1;
+}
+
+.header ul{
+  list-style: none;
+}
+
+.header ul li{
+  display: inline-block;
+  padding: 2px 80px;    
+}
+.header ul li:nth-child(1){
+  padding: 0 20px 0 0;
+}
+.header ul li:hover{
+  transform: scale(1.1);
+}
+
+.header ul a{
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-style: normal;
+  color: #003558;
+  padding: 12px;
+  text-decoration: none;
+  position: relative;    
+}  
 
     h1 {
       color: white;
@@ -54,7 +100,7 @@ section{
     }
 
     .hotel-container {
-      
+      padding-top: 120px;
       width: 80rem;
       margin: 0 auto;
       width: 90%;
@@ -96,7 +142,7 @@ section{
       margin-top: 20px;
       margin-bottom: 10px;
       cursor: pointer;
-      /* Cambiar el cursor al hacer hover en el nombre del hotel */
+     
     }
 
     .hotel p {
@@ -118,25 +164,29 @@ section{
     }
 
     a{
-    color:  #1644A2;
+    color: #003558;
 }
 
-.header{
 
-    top: 0; left: 0; right: 0;
-    z-index: 1000;
-    background: #446a7a;
-    box-shadow: var(--box-shadow);
-    align-items: center;
-    justify-content: space-between;
-    padding: 20PX;
-}
 
-  </style>
+  </style> <!--CSS para arriba-->
+
+
 </head>
 
+
 <header class="header">
-<h1>Hoteles</h1>
+  <div class="logo">
+      <img src="/img/logo.jpg" alt=""></a>
+  </div>
+  <nav>
+      <ul>
+      <li><a href="/index.html">Hoteles</a></li>
+      <li><a href="/restaurantes.html">Restaurantes</a></li>
+      <li><a href="/sitios.html">Sitios turísticos</a></li>
+      <li><a href="/resena.html">Reseña Histórica</a></li>
+  </ul>
+  </nav>
 </header>
 
 <body>
