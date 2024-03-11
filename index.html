@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hoteles</title>
+   <link rel="shortcut icon" href="/images2/logo.jpg" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="style.css">
+   
+   <style>
+      p {
+         font-size: 13px; /* Tamaño de letra original para la etiqueta <p> */
+      }
+
+      h1 + p {
+         font-size: 20px; /* Tamaño de letra aumentado para la etiqueta <p> después de <h1> */
+      }
+
+      .content h1 {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         z-index: 2;
+      }
+
+      .container {
+  position: relative;
+  width: 100%;
+  height: 400px; 
+  overflow: hidden;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.image-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: slideshow 8s infinite;
+  z-index: 0;
+}
+
+@keyframes slideshow {
+  0%, 20% {
+    opacity: 0;
+    z-index: 1;
+  }
+  25%, 45% {
+    opacity: 1;
+    z-index: 2;
+  }
+  50%, 100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+   </style>
+
+</head>
+<!--
+   <style>
+      h1 {
+         font-style: 20px;
+      }
+   </style>
+<body>
+-->
+   <!-- header -->
+<body>
+   <header class="header">
+      <a href="/sitios.html"class="logo"><i class="fa-solid fa-water " > El Penol </i></a>
+      
+      <nav class="navbar">
+         <a href="Repositorio.html" class="btn">Hoteles</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </header>
+
+   <!-- end -->
+
+   <!-- home -->
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+         <div class="swiper-wrapper">
+            
+            <div class="swiper-slide slide" style="background: url(images2/madrigeraHotel.webp) no-repeat;">
+               <div class="content">
+                  <h3>Disfruta de Nuestros Mejores Servicios Hoteleros</h3>
+                 
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images2/hotelboutique.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Disfruta de Nuestros Mejores Servicios Hoteleros</h3>
+                  
+                  
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images2/lalaguna.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Disfruta de Nuestros Mejores Servicios Hoteleros</h3>
+                  
+
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images2/botanico.jpg) no-repeat;">
+               <div class="content">
+                  <h3>Disfruta de Nuestros Mejores Servicios Hoteleros</h3>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+
+   </section>
+
+   
+   <!-- FIN -->
+
+
+   <!-- room -->
+
+   <section class="room" id="room">
+
+      <h1 class="heading">Hoteles</h1>
+      <p> En el corazón de la hermosa región de Antioquia, te damos la bienvenida a nuestros encantadores Hoteles. Nos enorgullece ofrecer servicios hoteleros de alta calidad, brindando una experiencia única y acogedora para nuestros huéspedes.
+      </p>
+      <div class="swiper room-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+               
+                  <img src="images2/botanico.jpg" alt="">
+               
+               </div>
+               
+               <div class="content">
+                  <h3>Botánico Hotel Boutique Guatapé</h3>
+                  <p>Botánico Hotel Boutique Guatapé se encuentra en El Peñol,
+                     a 9,4 km de Piedra del Peñol, y ofrece alojamiento con jardín,
+                     parking privado gratis
+                     ,terraza y restaurante.
+                  </p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="/hotelboutique.html" class="btn">Ver más</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images2/lalaguna.jpg" alt="">
+               </div>
+               <div class="content">
+                  <h3>Breeze Glamping -Guatapé</h3>
+                  <p>Breeze Glamping -Guatape está en El Peñol, a 4,7 km de Piedra del Peñol, y dispone de alojamiento con terraza y parking privado gratis.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+                  <a href="/glamping.html" class="btn">Ver más</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images2/Bahiaelpenol.jpg" alt=""> 
+               </div>
+
+
+               <div class="content">
+                  <h3>Hotel Campestre Alto de Sión</h3>
+                  <p>Hotel Campestre Alto de Sión ofrece alojamiento con piscina al aire libre, parking privado gratis, jardín y salón de uso común.
+                     Este alojamiento ofrece servicio de habitaciones y recepción 24 horas, además de wifi gratis en todo
+                     el alojamiento. El restaurante sirve platos de cocina americana y de cocina caribeña, y el bar es ideal
+                     para tomar algo. </p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="/campestre.html" class="btn">Ver más</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images2/piedra_vieja.jpg" alt="">
+               </div>
+               <div class="content">
+                  <h3>Donde Andres Campestre</h3>
+                  <p>Donde Andres Campestre - Guatape se encuentra en El Peñol,
+                     en la región de Antioquia, a 5 km de Piedra del Peñol. Ofrece alojamiento con wifi gratis,
+                     zona de barbacoa, piscina al aire libre y parking privado gratis. El alojamiento dispone de 
+                     bañera de hidromasaje.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="/andresC.html" class="btn">Ver mas</a>
+               </div>
+            </div>
+
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+
+   <section class="footer">
+
+      <div class="box-container">
+      </div>
+
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-instagram"></a>
+         <a href="#" class="fab fa-youtube"></a>
+         <a href="#" class="fab fa-google"></a>
+      </div>
+   </section>
+
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+   <script src="script.js"></script>
+
+ </body> 
+</html>
