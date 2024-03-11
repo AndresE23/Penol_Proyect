@@ -36,57 +36,8 @@
                     <h1 id="titulo_pueblo">La Piedra.  </h1>
                     <h1 id="sub_pueblo">Mejores Lugares</h1>
                 </div>
-
-            <div class="gen">
-                    <div class="graf1">
-                    <div id="lineplot"></div>
-                    <py-script output="lineplot">
-                        import matplotlib.pyplot as plt
-
-                        fig, ax = plt.subplots()
-
-                        penol_years = [2016, 2017, 2018, 2019, 2020, 2021]
-                        population_penol = [40, 42, 45, 47, 50, 53]  # Datos ficticios de la población de El Peñol
-
-                        plt.plot(penol_years, population_penol, marker='o', linestyle='-', color='b', label='El Peñol')
-
-                        plt.xlabel('Año')
-                        plt.ylabel('Población (M)')
-                        plt.title('Año vs Poblacion Turistica Piedra')
-                        plt.legend(loc='upper left')
-
-                        fig
-                    </py-script>
-                    </div>
-                    
-                    <div class="graf2">
-                    <div id="lineplot1"></div>
-                    <py-script output="lineplot1">
-                        # Datos ficticios de la piedra del Peñol
-                        labels = ['2016', '2017', '2018', '2019', '2020', '2021']
-                        population_penol = [40, 42, 45, 47, 50, 53]
-
-                        # Configuración del gráfico de pastel
-                        colors = ['gold', 'lightcoral', 'lightblue', 'lightgreen', 'lightsalmon', 'lightcyan']
-                        explode = (0.1, 0, 0, 0, 0, 0)  # Destacar el primer segmento
-
-                        # Crear el gráfico de pastel
-                        plt.pie(population_penol, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, startangle=140)
-
-                        # Añadir título
-                        plt.title('Distribución de la Población de la Piedra del Peñol por Año')
-
-                        # Mostrar el gráfico
-                        fig
-
-                    </py-script>
-                </div>
-
-            </div>
              
         </div>
-
-        <br><br>
 
         <div id="contenedor1">
             <div id="ani">
@@ -115,11 +66,67 @@
                     Hoy en día, la Piedra del Peñol sigue siendo un testimonio viviente de la historia y la belleza natural de Antioquia. Su presencia imponente se mantiene como un faro para aquellos que buscan conexión con la naturaleza y desean desafiar sus propios límites en la ascensión a este ícono colombiano.
                 </p>
             </div>
-            <div class="imagen_fenix">
-                <img src="/img/El-Peñol-Antioquia-Fenix-de-America-2.jpg" alt="">
-            </div>
         </div>
-        <br><br>
+
+        <br><br><br>
+            <div class="graf1">
+            <div id="lineplot"></div>
+            <py-script output="lineplot">
+                import matplotlib.pyplot as plt
+
+                fig, ax = plt.subplots()
+
+                penol_years = [2016, 2017, 2018, 2019, 2020, 2021]
+                population_penol = [40, 42, 45, 47, 40, 45]  # Datos ficticios de la población de El Peñol
+
+                plt.plot(penol_years, population_penol, marker='o', linestyle='-', color='b', label='El Peñol')
+
+                plt.xlabel('Año')
+                plt.ylabel('Subida % (M)')
+                plt.title('Año vs Subida %')
+                plt.legend(loc='upper left')
+
+
+                plt.grid(True)  # Add gridlines for better readability
+                plt.tight_layout()  # Adjust spacing to prevent overlapping elements
+                fig
+            </py-script>
+
+            <div id="lineplot1"></div>
+            <py-script output="lineplot1">
+                # Datos ficticios de la piedra del Peñol
+                labels = ['2016', '2017', '2018', '2019', '2020', '2021']
+                population_penol = [40, 42, 45, 47, 20, 45]
+
+                # Configuración del gráfico de pastel
+                colors = ['gold', 'lightcoral', 'lightblue', 'lightgreen', 'lightsalmon', 'lightcyan']
+                explode = (0, 0, 0, 0, 0.2, 0)  # Destacar el primer segmento
+
+                # Crear el gráfico de pastel
+                plt.pie(population_penol, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, startangle=140)
+
+                # Añadir título
+                plt.title('Distribución de Restaurantes por año')
+                plt.ylabel('Restauranres Ingreso')
+                # Mostrar el gráfico
+                fig
+
+            </py-script>
+            </div>
+            
+            
+            
+            
+        
+
+    </div>
+        <br><br><br><br>
+        <div class="boton1">
+            <a href="/Reserva.html" class="btn btn-4">Reserva</a>
+        </div>
+        <br>
+
+        
     </main>
         <footer class="footer">
             <div class="footer_container">

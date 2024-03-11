@@ -37,52 +37,6 @@
                     <h1 id="sub_pueblo">Mejores Lugares</h1>
                 </div>
 
-            <div class="gen">
-                    <div class="graf1">
-                    <div id="lineplot"></div>
-                    <py-script output="lineplot">
-                        import matplotlib.pyplot as plt
-
-                        fig, ax = plt.subplots()
-
-                        penol_years = [2016, 2017, 2018, 2019, 2020, 2021]
-                        population_penol = [40, 42, 45, 47, 50, 53]  # Datos ficticios de la población de El Peñol
-
-                        plt.plot(penol_years, population_penol, marker='o', linestyle='-', color='b', label='El Peñol')
-
-                        plt.xlabel('Año')
-                        plt.ylabel('Población (M)')
-                        plt.title('Año vs Poblacion Turistica Piedra')
-                        plt.legend(loc='upper left')
-
-                        fig
-                    </py-script>
-                    </div>
-                    
-                    <div class="graf2">
-                    <div id="lineplot1"></div>
-                    <py-script output="lineplot1">
-                        # Datos ficticios de la piedra del Peñol
-                        labels = ['2016', '2017', '2018', '2019', '2020', '2021']
-                        population_penol = [40, 42, 45, 47, 50, 53]
-
-                        # Configuración del gráfico de pastel
-                        colors = ['gold', 'lightcoral', 'lightblue', 'lightgreen', 'lightsalmon', 'lightcyan']
-                        explode = (0.1, 0, 0, 0, 0, 0)  # Destacar el primer segmento
-
-                        # Crear el gráfico de pastel
-                        plt.pie(population_penol, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, startangle=140)
-
-                        # Añadir título
-                        plt.title('Distribución de la Población de la Piedra del Peñol por Año')
-
-                        # Mostrar el gráfico
-                        fig
-
-                    </py-script>
-                </div>
-
-            </div>
              
         </div>
 
@@ -99,9 +53,8 @@
                                 <div class="icon">1</div>
                                 <div class="description">
                                     <a href="/Imagenes/rio1.jpeg" target="_blank">
-                                    <h4>Winter</h4>
-                                    <p>Winter has so much to offer -
-                                     creative activities</p>
+                                    <h4>Presa</h4>
+                                    <p>Linda Foto </p>
                                     </a>
                                 </div>
                             </div>
@@ -112,9 +65,8 @@
                                 <div class="icon">2</div>
                                 <div class="description">
                                     <a href="/Imagenes/rio2.jpg" target="_blank">
-                                    <h4>Digital Technology</h4>
-                                    <p>Gets better every day -
-                                     stay tuned</p>
+                                    <h4>Presa</h4>
+                                    <p>Linda Foto</p>
                                     </a>
                                 </div>
                             </div>
@@ -125,8 +77,8 @@
                                 <div class="icon">3</div>
                                 <div class="description">
                                     <a href="/Imagenes/rio3.jpg" target="_blank">
-                                    <h4>Globalization</h4>
-                                    <p>Help people all over the world</p>
+                                    <h4>Presa</h4>
+                                    <p>Linda Foto</p>
                                     </a>
                                 </div>
                             </div>
@@ -136,10 +88,9 @@
                             <div class="row">
                                 <div class="icon">4</div>
                                 <div class="description">
-                                    <a href="/Imagenes/rio4.jpg" target="_blank">
-                                    <h4>New technologies</h4>
-                                    <p>Space engineering becomes
-                                     more and more advanced</p>
+                                    <a href="/Imagenes/rio4.jpeg" target="_blank">
+                                    <h4>Presa </h4>
+                                    <p>Linda Foto</p>
                                     </a>
                                 </div>
                             </div>
@@ -161,11 +112,59 @@
                     Cada rincón de la Represa del Peñol respira historias, desde las leyendas locales de una aldea sumergida hasta la celebración anual de la Feria de las Flores. Este monumento no solo es un testimonio de la capacidad humana para moldear su entorno, sino también un recordatorio de la importancia de preservar y apreciar la belleza natural que lo rodea. La Represa del Peñol es un faro de conexión entre el hombre y la naturaleza, entre el pasado y el presente, dejando una huella duradera en el tejido cultural de Guatapé.
                 </p>
             </div>
-            <div class="imagen_fenix">
-                <img src="/img/El-Peñol-Antioquia-Fenix-de-America-2.jpg" alt="">
-            </div>
         </div>
-        <br><br>
+    <br><br> <br><br> <br><br> 
+            <div class="graf1">
+            <div id="lineplot"></div>
+            <py-script output="lineplot">
+                import matplotlib.pyplot as plt
+
+                fig, ax = plt.subplots()
+
+                penol_years = [2016, 2017, 2018, 2019, 2020, 2021]
+                population_penol = [40, 42, 45, 47, 40, 45]  # Datos ficticios de la población de El Peñol
+
+                plt.plot(penol_years, population_penol, marker='o', linestyle='-', color='b', label='El Peñol')
+
+                plt.xlabel('Año')
+                plt.ylabel('Subida % (M)')
+                plt.title('Año vs Subida %')
+                plt.legend(loc='upper left')
+
+
+                plt.grid(True)  # Add gridlines for better readability
+                plt.tight_layout()  # Adjust spacing to prevent overlapping elements
+                fig
+            </py-script>
+
+            <div id="lineplot1"></div>
+            <py-script output="lineplot1">
+                # Datos ficticios de la piedra del Peñol
+                labels = ['2016', '2017', '2018', '2019', '2020', '2021']
+                population_penol = [40, 42, 45, 47, 20, 45]
+
+                # Configuración del gráfico de pastel
+                colors = ['gold', 'lightcoral', 'lightblue', 'lightgreen', 'lightsalmon', 'lightcyan']
+                explode = (0, 0, 0, 0, 0.2, 0)  # Destacar el primer segmento
+
+                # Crear el gráfico de pastel
+                plt.pie(population_penol, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, startangle=140)
+
+                # Añadir título
+                plt.title('Distribución de Restaurantes por año')
+                plt.ylabel('Restauranres Ingreso')
+                # Mostrar el gráfico
+                fig
+
+            </py-script>
+            </div>
+
+
+            <br><br><br><br>
+        <div class="boton1">
+            <a href="/Reserva.html" class="btn btn-4">Reserva</a>
+        </div>
+        <br>
     </main>
         <footer class="footer">
             <div class="footer_container">

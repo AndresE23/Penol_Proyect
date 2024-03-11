@@ -38,21 +38,12 @@
                     <h1 id="titulo_pueblo">Sitios El Peñol.  </h1>
                     <h1 id="sub_pueblo">Mejores Lugares</h1>
                 </div>
-            
+                
                 <div class="video-container">
                 <iframe  src="https://www.youtube.com/embed/MEzU1HvBo6Y?si=KTefBt5y_bqhB2H2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-             <div class="texto_titulo_principal">
-               <div class="fecha_fundacional">
-                
-               </div> 
-                <div class="container_img_texto_titulo_principal">
-                    
-                </div>
-             </div> 
+                <br><br>
         </div>
-
-        <br><br>
 
         <div id="contenedor1">
             <div id="ani">
@@ -113,22 +104,23 @@
 
             fig, ax = plt.subplots()
 
-            Vecchio_Forno_G = [2016, 2017, 2018, 2019, 2020, 2021]
-            population_1 = [42, 43, 45, 43, 48, 50]
+            # Sample data (replace with your actual data)
+            years = [2020, 2021, 2022, 2023, 2024]
+            tourist_visits = [10000, 12000, 15000, 18000, 21000]
 
-            Casa_Cuba = [2016, 2017, 2018, 2019, 2020, 2021]
-            population_2 = [43, 43, 46, 44, 47, 51]
+            # Create the line graph
+            plt.plot(years, tourist_visits, marker='o', linestyle='-', color='b', label='Tourist Visits')
 
-            plt.plot(Vecchio_Forno_G, population_1, marker='o', linestyle='--', color='g', label='Piedra')
-            plt.plot(Casa_Cuba, population_2,  marker='d', linestyle='-', color='r', label='Represa')
-
+            # Customize the plot for clarity and aesthetics
             plt.xlabel('Year')
-            plt.ylabel('Population (M)')
-            plt.title('Year vs Population')
-            plt.legend(loc='lower right')
+            plt.ylabel('Number of Tourists')
+            plt.title('Tourist Visits to Piedra del Peñol (2020-2024)')
+            plt.legend(loc='upper left')
 
+            # Display the graph
+            plt.grid(True)  # Add gridlines for better readability
+            plt.tight_layout()  # Adjust spacing to prevent overlapping elements
             fig
-
 
 
         </py-script>
@@ -148,18 +140,25 @@
             population_2 = [43, 43, 46, 44, 47, 51]
 
             plt.plot(Vecchio_Forno_G, population_1, marker='o', linestyle='--', color='g', label='Piedra')
-            plt.plot(Casa_Cuba, population_2,  marker='d', linestyle='-', color='r', label='Represa')
+            plt.plot(Casa_Cuba, population_2,  marker='d', linestyle='-', color='r', label='Pueblo')
 
-            plt.xlabel('Year')
-            plt.ylabel('Population (M)')
-            plt.title('Year vs Population')
+            plt.xlabel('Año')
+            plt.ylabel('Ingresos en Porsentaje')
+            plt.title('Año vs Ingresos%')
             plt.legend(loc='lower right')
 
+            plt.grid(True)  # Add gridlines for better readability
+            plt.tight_layout()  # Adjust spacing to prevent overlapping elements
             fig
 
 
 
         </py-script>
+        </div>
+
+        <div class="boton1">
+            <a href="/Reserva.html" class="btn btn-4">Reserva</a>
+
         </div>
 
 
