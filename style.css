@@ -24,18 +24,7 @@ html{
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar{
-    width: .8rem;
-}
 
-html::-webkit-scrollbar-track{
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb{
-    background: #005374;
-    border-radius: .5rem;
-}
 
 section{
     padding: 5rem 7%;
@@ -43,16 +32,11 @@ section{
 
 
 
-
-
-/* header */
-/*este es un nuevo comentario*/
-
 .header{
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000;
-    background-color: rgb(243, 238, 238);
+    background-color: #EFF9FB;
     box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
@@ -75,10 +59,12 @@ section{
     font-size: 1.7rem;
     color: var(--black);
     margin: 0 1rem;
+    
 }
 
 .header .navbar a:hover{
     color: #005374;
+    
 }
 
 .header .navbar .btn{
@@ -86,6 +72,7 @@ section{
     margin-top: 0;
     color: #003558;
     font-weight: bolder;
+    
 
 }
 .heading{
@@ -96,6 +83,8 @@ section{
     font-weight: bolder;
     margin-bottom: 3rem;
 }
+
+
 
 
 #menu-btn{
@@ -223,7 +212,7 @@ section{
 
 .about .row .content p{
     font-size: 1.6rem;
-    color: #666;
+    
     padding: 1rem 0;
     line-height: 1.8;
 }
@@ -305,7 +294,6 @@ section{
 
 .room .slide .content p{
     font-size: 1.6rem;
-    color: #666;
     padding: .5rem 0;
     line-height: 1.5;
 }

@@ -1,6 +1,15 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 body{
     margin: 0;
     }
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
     
     
     header {
@@ -51,7 +60,7 @@ body{
     }
     
     header ul a{
-        font-family: "Ubuntu", sans-serif;
+        padding: 12px;
         font-weight: 700;
         font-size: 1.5rem;
         font-style: normal;

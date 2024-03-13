@@ -1,8 +1,15 @@
+
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 body{
     margin: 0;
     }
-    
-    
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
     header {
         background-color: #EFF9FB;
         display: flex;
@@ -51,7 +58,7 @@ body{
     }
     
     header ul a{
-        font-family: "Ubuntu", sans-serif;
+        padding: 12px;
         font-weight: 700;
         font-size: 1.5rem;
         font-style: normal;
@@ -102,14 +109,12 @@ body{
     }
     
     .container .titulo_principal #titulo_pueblo{
-        font-family: "Ubuntu", sans-serif;
         font-weight: 400;
         font-size: 150px;
         font-style: normal;
         color:#003558;
     }
     .container .titulo_principal #sub_pueblo{
-        font-family: "Ubuntu", sans-serif;
         font-weight: 700;
         font-style: italic;
     }
@@ -126,7 +131,6 @@ body{
 
 
 .btn{
-font-family: "Ubuntu", sans-serif;
    position: relative;
     padding: 20px 50px;
     text-decoration: none;
@@ -190,7 +194,6 @@ font-family: "Ubuntu", sans-serif;
         padding: 80px;
         text-align: center;
         font-size: 20px;
-        font-family: "Ubuntu", sans-serif;
         font-weight: 800;
         font-style: bold;
     }
@@ -213,7 +216,6 @@ font-family: "Ubuntu", sans-serif;
         color: rgb(89, 94, 99);
         font-style: italic;
         font-weight: 600;
-        font-family: "Ubuntu", sans-serif;
     }
     
     .segundo_slice .texto_ave_fenix #parrafo_fenix{
@@ -263,242 +265,6 @@ font-family: "Ubuntu", sans-serif;
         width: 91%;
         margin: 50px;
     }
-    
-    .parrafo2_fenix{
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        padding: 25px;
-        line-height: 2;
-    }
-    
-    .segundo_slice_2{
-        display: flex;
-        flex-direction: row-reverse;
-        height: 60rem;
-        margin-left: 30px;
-        width: 110rem;
-    }
-    
-    .parrafo2_fenix{
-        background:linear-gradient(rgb(255, 255, 255), rgb(154, 186, 199));
-        border-radius: 50px;
-        height: 57.5rem;
-        padding: 30px; 
-        
-    }
-    
-    .parrafo2_fenix p{
-        color: #003558;
-        padding: 20px;
-        font-size: 19px;
-        text-align: justify;
-        line-height: 2cap;
-        width: 600px;
-    }
-    
-    .imagenes_derecha{
-        background-color: #003558;
-        border-radius: 50px;
-        margin-right: 5em;
-        flex-direction: column-reverse;
-        height: 60rem;
-        width: 100%;
-    }
-    .imagen_logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .imagenes_derecha .imagen_logo img{
-        border: 9px solid rgb(228, 239, 252);
-        border-radius: 925px;
-        background-color: #003558;
-        width: 500px;
-        height: 25rem;
-        padding: 20px;
-        margin: 23px;
-    }
-    
-    .imagenes_derecha .imagen_dos img{
-        background-color: #003558;
-        border: 9px solid rgb(228, 239, 252);
-        height: 24rem;
-        width: 90%;
-        padding: 15px;
-    }
-    .imagen_dos img{
-        margin-left: 25px;
-        width: 300px;
-    }
-    
-    .container_tercer_slide{
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .seccion_uno{
-        background-color: beige;
-        width: 30%;
-        height: 130em;
-    }
-    
-    .seccion_uno .container_fiestas h1{
-        color: rgb(255, 145, 0);
-        font-family: "Ubuntu", sans-serif;
-        padding: 10px 20px;
-        text-align: center;
-    }
-    .seccion_uno .container_fiestas hr{
-        width: 50%;
-    }
-    .seccion_uno .container_fiestas ul{
-        margin: 22px;
-        font-size: 19px;
-        line-height: 3cap;
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 300;
-        list-style-type: circle;
-    }
-    
-    .seccion_uno .epigrafe h1{
-        margin-top: 25px;
-        font-size: 25px;
-        text-align: center;
-        font-family: "Ubuntu", sans-serif;
-    }
-    
-    .seccion_uno .epigrafe hr{
-        width: 50%;
-    }
-    
-    .seccion_uno .epigrafe p{
-        text-align: center;
-        font-family: "Ubuntu", sans-serif;
-        font-style: italic;
-    }
-    
-    .seccion_uno .cumpleanos h2{
-        font-size: 25px;
-        font-family: "Ubuntu", sans-serif;
-        text-align: center;
-    }
-    .seccion_uno .cumpleanos p{
-        font-family: "Ubuntu", sans-serif;
-        font-weight: 600;
-        text-align: center; 
-    }
-    .seccion_uno .cumpleanos ul{
-        font-size: 19px;
-        line-height: 2rem;
-        font-family: "Ubuntu", sans-serif;
-    }
-    .seccion_uno .cumpleanos hr{
-        width: 50%;
-    }
-    
-    .seccion_dos{
-        background-color: rgb(248, 248, 238);
-        border-radius: 50px;
-        width: 70%;
-        height: 130em;
-    }
-    
-    .seccion_dos .gentilicios {
-        font-family: "Ubuntu", sans-serif;
-        text-align: center;
-        font-size: 19px; 
-    }
-    .seccion_dos .gentilicios  h1{
-        color: rgb(255, 145, 0);
-        
-    }
-    .seccion_dos .gentilicios hr{
-        width: 50%;
-    }
-    .seccion_dos .apelativos{
-        font-family: "Ubuntu", sans-serif;
-        text-align: center;
-        font-size: 19px;
-    }
-    .seccion_dos .apelativos .nuevo_penol{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .seccion_dos .apelativos img{
-        width: 900px;
-        text-align: center;
-        padding: 30px;
-        height: fit-content;
-    }
-    @keyframes show_imagen_penol{
-        from{
-            opacity: 0;
-            scale: 25%;
-        }
-        to{
-            opacity: 1;
-            scale: 100%;
-        }
-    }
-    .container_tercer_slide .nuevo_penol img{
-        view-timeline-name: --image2;
-        view-timeline-axis: block;
-        animation-timeline: --image2;
-        animation-name: show_imagen_penol;
-        animation-range: entry 25% cover 30%;
-        animation-fill-mode: both;
-    }
-    .seccion_dos .apelativos hr{
-        width: 70%;
-    }
-    
-    .seccion_dos .personaje{
-        font-family: "Ubuntu", sans-serif;
-        text-align: center;
-        font-size: 19px;
-    }
-    
-    .seccion_dos .economia h1{
-        font-family: "Ubuntu", sans-serif;
-        text-align: center;
-        font-size: 29px;
-        color: rgb(255, 145, 0);
-        
-    }
-    .seccion_dos .economia p{
-        font-family: "Ubuntu", sans-serif;
-        line-height: 2;
-        text-align: center;
-        
-    
-    }
-    .seccion_dos .economia .imagen_economia{
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .seccion_dos .economia .imagen_economia img{
-        width: 300px;
-        height: fit-content;
-    }
-    
-    .seccion_dos .represa{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .seccion_dos .represa img{
-        width: 80em;
-        height: fit-content;
-    }
-    
-    
     
     
     .footer_container{
@@ -628,8 +394,5 @@ font-family: "Ubuntu", sans-serif;
     100% { transform: translateX(-calc(100%)); }
   }
     
-    
-    /**Diseño responsive aqui debajo**/
-    /*Responsive design*/
     
     

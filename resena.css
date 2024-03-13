@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 
+
+
 *{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -9,7 +11,7 @@
     
     
     .header {
-        background-color: rgb(243, 238, 238);
+        background-color: #EFF9FB;
         display: flex;
         align-items: center;
         height: 5rem;
@@ -395,7 +397,6 @@
     }
     
     .container .titulo_principal #titulo_pueblo{
-        font-family: "Ubuntu", sans-serif;
         font-weight: 400;
         font-size: 10rem;
         font-style: normal;
@@ -412,7 +413,6 @@
         padding-top: 50px;
         text-align: center;
         font-size: 20px;
-        font-family: "Protest Revolution", sans-serif;
         font-weight: 100;
         font-style: italic;
     }
@@ -435,7 +435,6 @@
         padding: 20px;
         text-align: center;
         font-size: 40px;
-        font-family: "Ubuntu", sans-serif;
         font-weight: 800;
         font-style: bold;
     }
@@ -459,11 +458,9 @@
         color: rgb(89, 94, 99);
         font-style: italic;
         font-weight: 600;
-        font-family: "Ubuntu", sans-serif;
     }
     
     .segundo_slice .texto_ave_fenix #parrafo_fenix{
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
         font-size: 18px;
         padding: 25px;
@@ -507,9 +504,8 @@
     
          
     .parrafo2_fenix{
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 19px;
         padding: 25px;
         line-height: 2;
     }
@@ -592,7 +588,6 @@
     
     .seccion_uno .container_fiestas h1{
         color: #003558;
-        font-family: "Ubuntu", sans-serif;
         padding: 10px 20px;
         text-align: center;
     }
@@ -602,7 +597,6 @@
         margin: 22px;
         font-size: 19px;
         line-height: 3cap;
-        font-family: "Ubuntu", sans-serif;
         font-weight: 300;
         list-style-type: circle;
     }
@@ -611,23 +605,19 @@
         margin-top: 25px;
         font-size: 25px;
         text-align: center;
-        font-family: "Ubuntu", sans-serif;
     }
 
     
     .seccion_uno .epigrafe p{
         text-align: center;
-        font-family: "Ubuntu", sans-serif;
         font-style: italic;
     }
     
     .seccion_uno .cumpleanos h2{
         font-size: 25px;
-        font-family: "Ubuntu", sans-serif;
         text-align: center;
     }
     .seccion_uno .cumpleanos p{
-        font-family: "Ubuntu", sans-serif;
         font-weight: 600;
         text-align: center; 
     }
@@ -636,7 +626,6 @@
         line-height: 5rem;
         text-align: center;
         list-style: none;
-        font-family: "Ubuntu", sans-serif;
     }
  
     
@@ -648,7 +637,6 @@
     }
     
     .seccion_dos .gentilicios {
-        font-family: "Ubuntu", sans-serif;
         text-align: center;
         font-size: 19px; 
     }
@@ -658,7 +646,6 @@
     }
 
     .seccion_dos .apelativos{
-        font-family: "Ubuntu", sans-serif;
         text-align: center;
         font-size: 19px;
     }
@@ -695,20 +682,17 @@
 
     
     .seccion_dos .personaje{
-        font-family: "Ubuntu", sans-serif;
         text-align: center;
         font-size: 11px;
     }
     
     .seccion_dos .economia h1{
-        font-family: "Ubuntu", sans-serif;
         text-align: center;
         font-size: 29px;
         color: #0FA548;
         
     }
     .seccion_dos .economia p{
-        font-family: "Ubuntu", sans-serif;
         line-height: 2;
         text-align: center;
         padding: 12px;
