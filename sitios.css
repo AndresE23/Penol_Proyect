@@ -214,11 +214,23 @@ body{
 
 /*=============== CARD ===============*/
 .container5 {
+  font-family: 'Poppins', sans-serif;
   display: grid;
   place-items: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
 }
+
+.container5 h3{
+  color: rgb(0, 53, 88);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; /* Agrega negrita si deseas */
+  text-align: center; /* Alinea al centro si deseas */
+  /* Agrega cualquier otra propiedad que desees */
+  font-size: 5.5em;
+}
+
+
 
 .card__container {
   display: grid;
